@@ -23,19 +23,19 @@ namespace Blog.Data.Repository
             _ctx.Posts.Add(post);
         }
 
-        public List<Post> GetAllPosts(int id)
+        public List<Post> GetAllPosts()
         {
             return _ctx.Posts.ToList();
         }
 
-        public Post getPost(int id)
+        public Post GetPost(int id)
         {
             return _ctx.Posts.FirstOrDefault(p => p.Id == id);
         }
 
         public void RemovePost(int id)
         {
-            _ctx.Posts.Remove(getPost(id));
+            _ctx.Posts.Remove(GetPost(id));
         }
 
         public async Task<bool> SaveChangesAsync()
