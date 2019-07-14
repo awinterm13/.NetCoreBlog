@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Blog.Migrations
 {
-    [DbContext(typeof(IRepository))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20190708081532_init")]
     partial class init
     {

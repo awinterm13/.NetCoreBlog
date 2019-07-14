@@ -10,9 +10,9 @@ namespace Blog.Data.Repository
     public class Repository : IRepository
     {
 
-        private Data.IRepository _ctx;
+        private AppDbContext _ctx;
 
-        public Repository(Data.IRepository ctx)
+        public Repository(AppDbContext ctx)
         {
             _ctx = ctx;
         }

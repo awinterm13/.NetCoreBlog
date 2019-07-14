@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Blog.Data
 {
-    public class IRepository : DbContext
+    public class AppDbContext : DbContext
     {
-        public IRepository(DbContextOptions<IRepository> options)
+        public AppDbContext(DbContextOptions<AppDbContext> options)
             :base(options)
         {
 
