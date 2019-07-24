@@ -5,7 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Content Remove="wwwroot\content\static\blue-lotus.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\content\blog\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\content\static\blue-lotus.jpg" />
   </ItemGroup>
 
   <ItemGroup>
